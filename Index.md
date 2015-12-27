@@ -12,14 +12,14 @@ knit        : slidify::knit2slides
 
 --- &twocol
 
-## The cost of Thanksgiving Dinner changes every year. How can you predict what these prices changes? 
+## The cost of Thanksgiving Dinner changes every year. How can you predict these prices changes? 
 
 *** =left
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
 
 *** =right
 * The cost of a traditional Thanksgiving Dinner for 10 people has gone from 28.74 in 1986 to a whopping 50.11 in 2015. 
-* This is an a total price increase of 74.36% and an average annual inflation rate of 2.48%.
+* This is a total price increase of 74.36% and an average annual inflation rate of 2.48%.
 * The cost increased by 13.18% between 2010 and 2011, but only by 1.27% between 2011 and 2015.
 * How much will the price increase next year? What about the next five years?  
 
@@ -53,9 +53,9 @@ $$ Ŷ_t = Y_t-1 + ϕ1(Y_t-1 - Y_t-2) - θ_1et-1 - θ_1et-1 $$
 *** =right
 * Play with the parameters!
 * See what happens to the charts!
-* See what happens to the diagnostic statistics and charts!
+* See what happens to the diagnostic statistics!
 * Use the Box-Jenkins methodology for model selection...or not!
-* Use your parameter selections for forecast the cost of Thanksgiving Dinner for the next five years!
+* Use your parameter selections to forecast the cost of Thanksgiving Dinner for the next five years!
 
 
 --- &twocol 
