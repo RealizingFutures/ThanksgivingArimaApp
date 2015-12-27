@@ -1,0 +1,14 @@
+base
+shiny
+XML
+data.table
+zoo
+timeDate
+forecast
+tseries
+slidify
+rlist
+httr
+dplyr
+knitr
+shinyapps
