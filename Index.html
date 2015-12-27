@@ -43,57 +43,97 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Thanksgiving Dinner Cost Forecaster</h2>
+    <h2>The cost of Thanksgiving Dinner changes every year. How can you predict what these prices changes?</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Forecast the cost of Thanksgiving Dinner</li>
-<li>Test your model</li>
-</ol>
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
 
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>The cost of a traditional Thanksgiving Dinner for 10 people has gone from 28.74 in 1986 to a whopping 50.11 in 2015. </li>
+<li>This is an a total price increase of 74.36% and an average annual inflation rate of 2.48%.</li>
+<li>The cost increased by 13.18% between 2010 and 2011, but only by 1.27% between 2011 and 2015.</li>
+<li>How much will the price increase next year? What about the next five years?<br></li>
+</ul>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>ARIMA</h2>
+    <h2>Using ARIMA</h2>
   </hgroup>
   <article data-timings="">
-    <p>This is the slide where I talk about ARIMA</p>
+    <h3>Autoregressive Integrated Moving Averages (ARIMA)</h3>
+
+<p>What does autoregressive integrated moving averages even mean?</p>
+
+<p>Are you tired of having to try and solve equations like this by hand?</p>
+
+<p>\[ Ŷ_t = Y_t-1 + ϕ1(Y_t-1 - Y_t-2) - θ_1et-1 - θ_1et-1 \]</p>
+
+<h3>With All the Confusion Why Forecast Using ARIMA?</h3>
+
+<ul>
+<li>ARIMA outperforms Exponential Smoothing in about 45% of times series forecasts!</li>
+<li>ARIMA doesn&#39;t just rely on season, trend, and error variables, but can take advantage of autocorrelations in time series data!</li>
+<li>ARIMA makes optimal forecasts under certain theoretical assumptions, such as stationarity and homoscedasticity!</li>
+<li>ARIMA outperforms other times series models in testing on Thanksgiving Dinner cost forecasts!</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Demo</h2>
+    <h2>Use the Thanksgiving Dinner Cost Forecaster!!!</h2>
   </hgroup>
   <article data-timings="">
-    <p>This is a demo slide</p>
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="App_Screenshot_Small.jpg" alt="width"></p>
 
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Play with the parameters!</li>
+<li>See what happens to the charts!</li>
+<li>See what happens to the diagnostic statistics and charts!</li>
+<li>Use the Box-Jenkins methodology for model selection...or not!</li>
+<li>Use your parameter selections for forecast the cost of Thanksgiving Dinner for the next five years!</li>
+</ul>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>More Perks</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>Not sure what to do with this slide yet</p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Conclusion</h2>
   </hgroup>
   <article data-timings="">
     
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="iStock_000004795159XSmall_Thanksgiving.jpg" alt="width"></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>So what are you waiting for?</li>
+<li>Try out the Thanksgiving Dinner Cost Forecaster today!</li>
+<li>App is available at the following link:</li>
+</ul>
+
+<p><a href="https://realizingfutures.shinyapps.io/ThanksgivingArimaApp">Thanksgiving Dinner Cost Forecaste</a></p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -104,32 +144,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Thanksgiving Dinner Cost Forecaster'>
+        data-slide=1 title='The cost of Thanksgiving Dinner changes every year. How can you predict what these prices changes?'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='ARIMA'>
+        data-slide=2 title='Using ARIMA'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Demo'>
+        data-slide=3 title='Use the Thanksgiving Dinner Cost Forecaster!!!'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='More Perks'>
+        data-slide=4 title='Conclusion'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Conclusion'>
-         5
       </a>
     </li>
   </ul>
@@ -142,7 +176,21 @@
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
