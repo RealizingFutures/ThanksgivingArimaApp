@@ -122,5 +122,5 @@ $$ Ŷ_t = Y_t-1 + ϕ1(Y_t-1 - Y_t-2) - θ_1et-1 - θ_1et-1 $$
 * Try out the Thanksgiving Dinner Cost Forecaster today!
 * App is available at the following link:
 
-[Thanksgiving Dinner Cost Forecaste](https://realizingfutures.shinyapps.io/ThanksgivingArimaApp)
+[Thanksgiving Dinner Cost Forecaster](https://realizingfutures.shinyapps.io/ThanksgivingArimaApp)
 
