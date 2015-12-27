@@ -25,9 +25,9 @@ knit        : slidify::knit2slides
 
 --- 
 
-## Using ARIMA
+## Use ARIMA
 
-### Autoregressive Integrated Moving Averages (ARIMA)
+### ARIMA stand for Autoregressive Integrated Moving Averages
 
 What does autoregressive integrated moving averages even mean?
 
@@ -60,7 +60,7 @@ $$ Ŷ_t = Y_t-1 + ϕ1(Y_t-1 - Y_t-2) - θ_1et-1 - θ_1et-1 $$
 
 --- &twocol 
 
-## Conclusion
+## Prepare for Next Year's Thanksgiving
 
 *** =left
 ![width](iStock_000004795159XSmall_Thanksgiving.jpg)
